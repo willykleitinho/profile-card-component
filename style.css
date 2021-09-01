@@ -1,0 +1,107 @@
+:root {
+  --background-color: hsl(185, 75%, 39%);
+  --card-background-color: hsl(181.6, 65.4%, 54.7%);
+  --font-color-primary: hsl(229, 23%, 23%);
+  --font-color-secondary: hsl(227, 10%, 46%);
+  --separator-color: hsl(0, 0%, 59%);
+
+  --font-size: 18px;
+  --font-family: 'Kumbh Sans';
+}
+
+body {
+  background: var(--background-color);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body, div, span, img {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile {
+  width: 330px;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.profile__banner {
+  background: blue;
+  padding-top: 2rem;
+  background-color: var(--card-background-color);
+  background-image: url("/images/bg-pattern-card.svg");
+  background-size: contain;
+}
+.profile__info {
+  background: white;
+  font-family: var(--font-family);
+  padding-top: 75px;
+}
+.profile__image {
+  margin: auto;
+  width: 110px;
+  aspect-ratio: 1/1;
+  display: block;
+  border-radius: 100%;
+  border: 5px solid white;
+  transform: translateY(50%);
+}
+.profile__name, .stats__qt {
+  font-size: var(--font-size);
+  font-weight: 700;
+  color: var(--font-color-primary);
+}
+
+.profile__age, .profile__city, .stats__label {
+  color: var(--font-color-secondary);
+}
+.profile__city, .stats__label {
+  display: block;
+  font-size: 15px;
+  margin-top: 5px;
+}
+.profile__stats {
+  margin-top: 25px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--separator-color);
+}
+
+.stats__label {
+  font-size: 13px;
+}
+
+.circle-top, .circle-bottom {
+  width: 750px;
+  position: absolute;
+  z-index: -1;
+}
+.circle-top {
+  bottom: 50%;
+  right: 50%;
+}
+.circle-bottom {
+  top: 50%;
+  left: 50%;
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  font-family: var(--font-family);
+  margin: 1.5rem;
+}
+.attribution a {
+  color: var(--font-color-primary);
+}
