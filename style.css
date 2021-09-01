@@ -30,26 +30,30 @@ body, div, span, img {
 }
 
 .profile {
-  width: 330px;
+  width: 340px;
   text-align: center;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.1);
 }
+
 .profile__banner {
   background: blue;
   padding-top: 2rem;
   background-color: var(--card-background-color);
-  background-image: url("/images/bg-pattern-card.svg");
+  background-image: url("images/bg-pattern-card.svg");
   background-size: contain;
 }
+
 .profile__info {
   background: white;
   font-family: var(--font-family);
   padding-top: 75px;
 }
+
 .profile__image {
   margin: auto;
-  width: 110px;
+  width: 100px;
   aspect-ratio: 1/1;
   display: block;
   border-radius: 100%;
